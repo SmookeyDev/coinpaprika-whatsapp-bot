@@ -32,17 +32,18 @@ client.on('authenticated', (session) => {
 
 client.on('message', async msg => {
     let chat = await msg.getChat();
+    let msg = 
     console.log(`Received message: ${msg.body} (Chat: ${chat.name})`);
 
     if (msg.body === '!help'){
         let message = `Irei te ajudar.
         \nAqui está a lista de comandos disponíveis:
-        \n!price <símbolo> [<quantia>] = Retorna a cotação do simbolo escolhido. QUANTIA opcional.
-        \n!convert <valor> <base> <cotação> = Retorna a cotação total de uma moeda na cotação determinada.
-        \n!buy <quantidade> <base> <cotação> <spread> = Retorna a quantia de moedas a ser compradas com agil para baixo.
-        \n!sell <quantidade> <base> <cotação> <spread> = Retorna a quantia de moedas a ser vendida com agil para cima.
-        \n!brlbuy <quantidade> <cripto> <spread> = Retorna a quantidade de moedas a serem compradas a partir da quantidade de reais e ágil para baixo.
-        \n!brlsell <quantidade> <cripto> <spread> = Retorna a quantidade de moedas a serem vendidas a partir da quantidade de reais e ágil para cima.`
+        \n!price [simbolo] [quantia] = Retorna a cotação do simbolo escolhido. QUANTIA opcional.
+        \n!convert [valor] [base] [cotação] = Retorna a cotação total de uma moeda na cotação determinada.
+        \n!buy [quantidade] [base] [cotação] [spread] = Retorna a quantia de moedas a ser compradas com agil para baixo.
+        \n!sell [quantidade] [base] [cotação] [spread] = Retorna a quantia de moedas a ser vendida com agil para cima.
+        \n!brlbuy [quantidade] [cripto] [spread] = Retorna a quantidade de moedas a serem compradas a partir da quantidade de reais e ágil para baixo.
+        \n!brlsell [quantidade] [cripto] [spread] = Retorna a quantidade de moedas a serem vendidas a partir da quantidade de reais e ágil para cima.`
         msg.reply(message)
     }
     
