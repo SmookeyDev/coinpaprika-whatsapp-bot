@@ -32,7 +32,6 @@ client.on('authenticated', (session) => {
 
 client.on('message', async msg => {
     let chat = await msg.getChat();
-    let msg = 
     console.log(`Received message: ${msg.body} (Chat: ${chat.name})`);
 
     if (msg.body === '!help'){
