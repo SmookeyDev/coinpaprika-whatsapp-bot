@@ -61,7 +61,7 @@ client.on('message', async msg => {
     else if (msg.body.startsWith('!sell ')){
         var props = msg.body.split(' ')
         if (props.length < 5) {
-            ctx.reply('Informe quantidade, base, cotação e spread que deseja após o comando !sell')
+            msg.reply('Informe quantidade, base, cotação e spread que deseja após o comando !sell')
         } else {
             CPP.sellPrice(props[1], props[2], props[3], props[4])
                 .then(resp => msg.reply(resp.replace(  /\./g, ",")))
@@ -71,7 +71,7 @@ client.on('message', async msg => {
     else if (msg.body.startsWith('!buy ')){
         var props = msg.body.split(' ')
         if (props.length < 5) {
-            ctx.reply('Informe quantidade, base, cotação e spread que deseja após o comando !buy')
+            msg.reply('Informe quantidade, base, cotação e spread que deseja após o comando !buy')
         } else {
             CPP.buyPrice(props[1], props[2], props[3], props[4])
                 .then(resp => msg.reply(resp.replace(  /\./g, ",")))
@@ -81,7 +81,7 @@ client.on('message', async msg => {
     else if (msg.body.startsWith('!brlsell ')){
         var props = msg.body.split(' ')
         if (props.length < 4) {
-            ctx.reply('Informe quantidade em BRL, cripto e spread que deseja após o comando !brlsell')
+            msg.reply('Informe quantidade em BRL, cripto e spread que deseja após o comando !brlsell')
         } else {
             CPP.brlsell(props[1], props[2], props[3])
                 .then(resp => msg.reply(resp.replace(  /\./g, ",")))
@@ -91,7 +91,7 @@ client.on('message', async msg => {
     else if (msg.body.startsWith('!brlbuy ')){
         var props = msg.body.split(' ')
         if (props.length < 4) {
-            ctx.reply('Informe quantidade em BRL, cripto e spread que deseja após o comando !brlbuy')
+            msg.reply('Informe quantidade em BRL, cripto e spread que deseja após o comando !brlbuy')
         } else {
             CPP.brlbuy(props[1], props[2], props[3])
                 .then(resp => msg.reply(resp.replace(  /\./g, ",")))
@@ -101,7 +101,7 @@ client.on('message', async msg => {
     else if (msg.body.startsWith('!convert ')){
         var props = msg.body.split(' ')
         if (props.length < 4) {
-            ctx.reply('Informe o valor, a base e a cotação que deseja após o comando !convert')
+            msg.reply('Informe o valor, a base e a cotação que deseja após o comando !convert')
         } else {
             CPP.convert(props[1], props[2], props[3])
                 .then(resp => msg.reply(resp.replace(  /\./g, ",")))
