@@ -46,7 +46,7 @@ client.on('message', async msg => {
         msg.reply(message)
     }
     
-    else if (msg.body.startsWith('!price ')){
+    else if (msg.body.startsWith('!price')){
         var props = msg.body.split(' ')
         if (props.length < 2){
             msg.reply('Informe o simbolo que deseja após o comando !price.')
@@ -57,7 +57,7 @@ client.on('message', async msg => {
                 .then(resp => msg.reply(resp.replace(  /\./g, ",")))
         }
     }
-    else if (msg.body.startsWith('!sell ')){
+    else if (msg.body.startsWith('!sell')){
         var props = msg.body.split(' ')
         if (props.length < 5) {
             msg.reply('Informe quantidade, base, cotação e spread que deseja após o comando !sell')
@@ -67,7 +67,7 @@ client.on('message', async msg => {
         }
     }
     
-    else if (msg.body.startsWith('!buy ')){
+    else if (msg.body.startsWith('!buy')){
         var props = msg.body.split(' ')
         if (props.length < 5) {
             msg.reply('Informe quantidade, base, cotação e spread que deseja após o comando !buy')
@@ -77,7 +77,7 @@ client.on('message', async msg => {
         }
     }
     
-    else if (msg.body.startsWith('!brlsell ')){
+    else if (msg.body.startsWith('!brlsell')){
         var props = msg.body.split(' ')
         if (props.length < 4) {
             msg.reply('Informe quantidade em BRL, cripto e spread que deseja após o comando !brlsell')
@@ -87,7 +87,7 @@ client.on('message', async msg => {
         }
     }
     
-    else if (msg.body.startsWith('!brlbuy ')){
+    else if (msg.body.startsWith('!brlbuy')){
         var props = msg.body.split(' ')
         if (props.length < 4) {
             msg.reply('Informe quantidade em BRL, cripto e spread que deseja após o comando !brlbuy')
@@ -97,7 +97,7 @@ client.on('message', async msg => {
         }
     }
     
-    else if (msg.body.startsWith('!convert ')){
+    else if (msg.body.startsWith('!convert')){
         var props = msg.body.split(' ')
         if (props.length < 4) {
             msg.reply('Informe o valor, a base e a cotação que deseja após o comando !convert')
