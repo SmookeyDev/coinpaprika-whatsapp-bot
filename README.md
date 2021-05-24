@@ -13,11 +13,13 @@ Esse projeto surgiu a partir da ideia de converter o [Coinpaprika BR Bot](https:
 | !brlbuy [quantidade] [cripto] [spread] = Retorna a quantidade de moedas a serem compradas a partir da quantidade de reais e ágil para baixo.  | ✅  |
 | !brlsell [quantidade] [cripto] [spread] = Retorna a quantidade de moedas a serem vendidas a partir da quantidade de reais e ágil para cima. | ✅ |
 
-## Versão de Telegram
+## Versões
 
-* [Repositorio](https://github.com/marcosnunesmbs/coinpaprika-br-bot/)
+* [WhatsApp](https://github.com/SmookeyDev/coinpaprika-whatsapp-bot)
+* [Telegram](https://github.com/marcosnunesmbs/coinpaprika-br-bot/)
+* [Discord](https://github.com/SmookeyDev/coinpaprika-discord-bot)
 
 ## Créditos
 
-* [Ícaro Sant'Ana](https://t.me/SmookeyDev) - Conversão para WhatsApp.
+* [Ícaro Sant'Ana](https://t.me/SmookeyDev) - Versão de WhatsApp e Discord.
 * [Marcos Nunes](https://t.me/SACNanoPay) - Versão de Telegram.
