@@ -22,4 +22,4 @@ Esse projeto surgiu a partir da ideia de converter o [Coinpaprika BR Bot](https:
 ## Créditos
 
 * [Ícaro Sant'Ana](https://t.me/SmookeyDev) - Versão de WhatsApp e Discord.
-* [Marcos Nunes](https://t.me/SACNanoPay) - Versão de Telegram.
+* [Marcos Nunes](https://github.com/marcosnunesmbs) - Versão de Telegram.
